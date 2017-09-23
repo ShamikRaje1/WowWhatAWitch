@@ -8,6 +8,7 @@ public class Movement : MonoBehaviour {
     public float jumpSpeed;
     public float jumpDelay;
     public bool isJumping;
+    public float flutter;
     float moveVertical;
     float moveHorizontal;
     int speed;
@@ -37,7 +38,20 @@ public class Movement : MonoBehaviour {
                 Debug.LogError("I tried");
                 velocity.y = jumpSpeed;
                 isJumping = true;
+                GetComponent<Rigidbody2D>().gravityScale = 3;
             }
+
+            if (GetComponent<Rigidbody2D>().velocity.y < 0)
+            {
+                GetComponent<Rigidbody2D>().gravityScale = flutter;
+            }
+            else
+            {
+                GetComponent<Rigidbody2D>().gravityScale = 3;
+            }
+        } else
+        {
+            GetComponent<Rigidbody2D>().gravityScale = 3;
         }
 
         //Setting player velocity to velocity
