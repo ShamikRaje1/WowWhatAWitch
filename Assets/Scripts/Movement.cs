@@ -6,15 +6,16 @@ public class Movement : MonoBehaviour {
 
     public float sideSpeed;
     public float jumpSpeed;
-    bool isJumping;
+    public float jumpDelay;
+    public bool isJumping;
     float moveVertical;
     float moveHorizontal;
+    Rigidbody2D floor;
 
     void Start()
     {
         isJumping = false;
     }
-    
 
     void FixedUpdate()
     {
@@ -31,6 +32,7 @@ public class Movement : MonoBehaviour {
             }
 
             velocity.y = jumpSpeed;
+            isJumping = true;
         }
 
         GetComponent<Rigidbody2D>().velocity = velocity;
