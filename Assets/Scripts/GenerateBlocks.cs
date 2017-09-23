@@ -11,7 +11,7 @@ public class GenerateBlocks : MonoBehaviour {
     private int rand;
     public float rangeMax;
     private float timer = 0;
-    private float offset;
+    public int numOfBlocks = 0;
     //    private const Sprite RIGHT_LIMIT = new 
     // Use this for initialization
     void Start () {
@@ -26,10 +26,9 @@ public class GenerateBlocks : MonoBehaviour {
         Debug.Log(timer);
         if (rand == 1 && timer > 1)
         {
-            x = Random.Range(LOWER_LIMIT, UPPER_LIMIT);
-            offset = Random.Range(-0.2f, 0.2f);
-            Instantiate(fallBlock, new Vector2(x+offset, y), Quaternion.identity);
+            x = Random.Range(-UPPER_LIMIT, UPPER_LIMIT);
             Instantiate(fallBlock, new Vector2(-x, y), Quaternion.identity);
+            numOfBlocks++;
             timer = 0;
         }
 	}
