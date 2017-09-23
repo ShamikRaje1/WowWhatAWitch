@@ -10,7 +10,7 @@ public class Movement : MonoBehaviour {
     public bool isJumping;
     float moveVertical;
     float moveHorizontal;
-    Rigidbody2D floor;
+    int speed;
 
     void Start()
     {
@@ -36,5 +36,18 @@ public class Movement : MonoBehaviour {
         }
 
         GetComponent<Rigidbody2D>().velocity = velocity;
+
+        if (velocity.x > 0.1)
+        {
+            GetComponent<SpriteRenderer>().flipX = false;
+        } else if (velocity.x < -0.1)
+        {
+            GetComponent<SpriteRenderer>().flipX = true;
+        }
+
+
+        GetComponent<Animator>().SetFloat("Speed", Mathf.Abs(velocity.x));
+
+        
     }
 }
