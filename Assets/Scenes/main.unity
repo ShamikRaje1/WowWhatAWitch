@@ -406,7 +406,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1385658474}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5, y: -4.27, z: 0}
+  m_LocalPosition: {x: 0, y: -6.96, z: 0}
   m_LocalScale: {x: 122.46559, y: 2.0888555, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -455,6 +455,7 @@ MonoBehaviour:
   fallBlock: {fileID: 1008649078979514, guid: 08b9c46707002404992ddcde94354974, type: 2}
   y: 6
   rangeMax: 300
+  UPPER_LIMIT: 6
 --- !u!1 &1750322804
 GameObject:
   m_ObjectHideFlags: 0
@@ -523,7 +524,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1750322804}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.1399093, y: 2.0726416, z: 0}
+  m_LocalPosition: {x: 0, y: 2.0726416, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
