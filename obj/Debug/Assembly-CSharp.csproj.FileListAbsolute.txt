@@ -1,0 +1,2 @@
+C:\Users\Chuck\Documents\WowWhatAWitch\WowWhatAWitch\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+C:\Users\Chuck\Documents\WowWhatAWitch\WowWhatAWitch\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
