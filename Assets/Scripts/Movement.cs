@@ -28,7 +28,7 @@ public class Movement : MonoBehaviour {
     }
     public void ShootWeb()
     {
-        GameObject bullet = Instantiate(projectile, new Vector2(gameObject.transform.position.x + xVelSign*0.75f, gameObject.transform.position.y), Quaternion.identity);
+        GameObject bullet = Instantiate(projectile, new Vector2(gameObject.transform.position.x + xVelSign*0.65f, gameObject.transform.position.y), Quaternion.identity);
         bullet.GetComponent<Rigidbody2D>().velocity = new Vector2(xVelSign*shotVelocity, 0.0f);
     }
     void FixedUpdate()
