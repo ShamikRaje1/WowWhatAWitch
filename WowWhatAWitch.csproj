@@ -88,6 +88,8 @@
     <Compile Include="Assets\Scripts\FallingBlockScript.cs" />
     <Compile Include="Assets\Scripts\GenerateBlocks.cs" />
     <Compile Include="Assets\Scripts\Movement.cs" />
+    <Compile Include="Assets\Scripts\ShootScript.cs" />
+    <Compile Include="Assets\Scripts\WebBallScript.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

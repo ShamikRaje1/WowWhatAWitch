@@ -23,7 +23,7 @@ public class GenerateBlocks : MonoBehaviour {
 	void Update () {
         rand = (int)Random.Range(0, rangeMax);
         timer += Time.deltaTime;
-        Debug.Log(timer);
+//        Debug.Log(timer);
         if (rand == 1 && timer > 1)
         {
             x = Random.Range(-UPPER_LIMIT, UPPER_LIMIT);
