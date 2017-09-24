@@ -16,6 +16,7 @@ public class Collision : MonoBehaviour {
     {
         var Player = GameObject.Find("Player");
         Player.GetComponent<Movement>().isJumping = false;
+        Player.GetComponent<Movement>().flutterTime = 0;
     }
     
 }

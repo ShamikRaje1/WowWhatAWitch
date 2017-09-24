@@ -12,6 +12,11 @@ public class GenerateBlocks : MonoBehaviour {
     public float rangeMax;
     private float timer = 0;
     public int numOfBlocks = 0;
+
+    public Sprite Bee;
+    public Sprite Lady;
+    public Sprite Leaf;
+
     //    private const Sprite RIGHT_LIMIT = new 
     // Use this for initialization
     void Start () {
@@ -28,6 +33,22 @@ public class GenerateBlocks : MonoBehaviour {
         {
             x = Random.Range(-UPPER_LIMIT, UPPER_LIMIT);
             Instantiate(fallBlock, new Vector2(-x, y), Quaternion.identity);
+
+            float choose = Random.Range(1, 4);
+            Sprite square;
+
+            if (choose == 1)
+            {
+                square = Bee;
+            } else if (choose == 2)
+            {
+                square = Lady;
+            } else
+            {
+                square = Leaf;
+            }
+
+            fallBlock.GetComponent<SpriteRenderer>().sprite = square;
             numOfBlocks++;
             timer = 0;
         }

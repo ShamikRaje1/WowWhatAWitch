@@ -9,6 +9,8 @@ public class Movement : MonoBehaviour {
     public float jumpDelay;
     public bool isJumping;
     public float flutter;
+    public float flutterLimit;
+    public float flutterTime;
     float moveVertical;
     float moveHorizontal;
     int speed;
@@ -17,6 +19,7 @@ public class Movement : MonoBehaviour {
     {
         //You don't start jumping
         isJumping = false;
+        flutterTime = 0;
     }
 
     void FixedUpdate()
@@ -41,9 +44,10 @@ public class Movement : MonoBehaviour {
                 GetComponent<Rigidbody2D>().gravityScale = 3;
             }
 
-            if (GetComponent<Rigidbody2D>().velocity.y < 0)
+            if (GetComponent<Rigidbody2D>().velocity.y < 0 && flutterTime < flutterLimit)
             {
                 GetComponent<Rigidbody2D>().gravityScale = flutter;
+                flutterTime += 0.1f;
             }
             else
             {
@@ -69,7 +73,7 @@ public class Movement : MonoBehaviour {
 
         //Lets the animator know if the player is moving
         GetComponent<Animator>().SetFloat("Speed", Mathf.Abs(velocity.x));
+        GetComponent<Animator>().SetFloat("Flutter", GetComponent<Rigidbody2D>().gravityScale);
 
-        
     }
 }
