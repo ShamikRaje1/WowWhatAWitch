@@ -325,7 +325,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 571798027}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.7, y: 5.3, z: -0.27148396}
+  m_LocalPosition: {x: -21.3, y: 4.9, z: -0.27148396}
   m_LocalScale: {x: 2.564577, y: 32.13487, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -811,7 +811,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1385658474}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -6.96, z: 0}
+  m_LocalPosition: {x: 0.35, y: -9.79, z: 0}
   m_LocalScale: {x: 122.46559, y: 2.0888555, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -980,15 +980,11 @@ MonoBehaviour:
   jumpSpeed: 20
   jumpDelay: 1.5
   isJumping: 0
-<<<<<<< HEAD
   flutter: 0
   projectile: {fileID: 1481283373393490, guid: f0d71c04f4b483b4bba9fcd4b0e8ab4e, type: 2}
   shotVelocity: 12
-=======
-  flutter: 0.1
   flutterLimit: 10
   flutterTime: 0
->>>>>>> 04b2992b69a9dc800d3fb0a893c767dcb294ab5f
 --- !u!50 &1441470149
 Rigidbody2D:
   serializedVersion: 4
@@ -1227,7 +1223,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1973297031}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.3, y: 6.2, z: -0.27148396}
+  m_LocalPosition: {x: 21.4, y: 5.5, z: -0.27148396}
   m_LocalScale: {x: 2.564577, y: 32.13487, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

@@ -18,7 +18,6 @@ GameObject:
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-<<<<<<< HEAD
   - component: {fileID: 4679814220491774}
   - component: {fileID: 61245026794336202}
   m_Layer: 0
@@ -40,14 +39,8 @@ GameObject:
   - component: {fileID: 50118204232003176}
   - component: {fileID: 114704663749049976}
   - component: {fileID: 61655694530337250}
-=======
-  - component: {fileID: 4938011880263424}
-  - component: {fileID: 212880015995402552}
-  - component: {fileID: 50185205593373568}
   - component: {fileID: 114863658056828204}
-  - component: {fileID: 61923064095816170}
   - component: {fileID: 95933980940663590}
->>>>>>> 04b2992b69a9dc800d3fb0a893c767dcb294ab5f
   m_Layer: 0
   m_Name: FallingBlock
   m_TagString: Untagged
@@ -152,16 +145,13 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
-<<<<<<< HEAD
---- !u!114 &114704663749049976
-=======
 --- !u!95 &95933980940663590
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1008649078979514}
+  m_GameObject: {fileID: 1773220930351624}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 0}
@@ -172,8 +162,19 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114704663749049976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1773220930351624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fbde9fdc00cc32419f08b7c2f8f2639, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  side: 
 --- !u!114 &114863658056828204
->>>>>>> 04b2992b69a9dc800d3fb0a893c767dcb294ab5f
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -217,13 +218,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-<<<<<<< HEAD
-  m_Sprite: {fileID: 21300000, guid: e2170d60892f7ff47ad5668253a2591f, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
-=======
   m_Sprite: {fileID: 21300000, guid: 225fa2973bb9a164c825ab63e748d35e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
->>>>>>> 04b2992b69a9dc800d3fb0a893c767dcb294ab5f
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
