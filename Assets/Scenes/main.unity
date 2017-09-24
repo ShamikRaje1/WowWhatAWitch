@@ -862,6 +862,9 @@ MonoBehaviour:
   y: 6
   rangeMax: 150
   numOfBlocks: 0
+  Bee: {fileID: 21300000, guid: 9024689fb0f76fb45bba13f8866d8151, type: 3}
+  Lady: {fileID: 21300000, guid: 225fa2973bb9a164c825ab63e748d35e, type: 3}
+  Leaf: {fileID: 21300000, guid: 1b5c0b1cbd2234c43b8e5b845cdd659f, type: 3}
 --- !u!1 &1441470143
 GameObject:
   m_ObjectHideFlags: 0
@@ -977,9 +980,15 @@ MonoBehaviour:
   jumpSpeed: 20
   jumpDelay: 1.5
   isJumping: 0
+<<<<<<< HEAD
   flutter: 0
   projectile: {fileID: 1481283373393490, guid: f0d71c04f4b483b4bba9fcd4b0e8ab4e, type: 2}
   shotVelocity: 12
+=======
+  flutter: 0.1
+  flutterLimit: 10
+  flutterTime: 0
+>>>>>>> 04b2992b69a9dc800d3fb0a893c767dcb294ab5f
 --- !u!50 &1441470149
 Rigidbody2D:
   serializedVersion: 4
@@ -1032,7 +1041,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0192be21f78a84c4098ec45ec8a19e73, type: 3}
+  m_Sprite: {fileID: 21300008, guid: 0192be21f78a84c4098ec45ec8a19e73, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
