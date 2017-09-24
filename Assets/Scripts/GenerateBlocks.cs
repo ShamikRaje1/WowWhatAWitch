@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GenerateBlocks : MonoBehaviour {
     public const float UPPER_LIMIT = 6;
     public const float LOWER_LIMIT = 1.5f;
     public GameObject fallBlock;
+    public Text score;
     private float x;
     public float y;
     private int rand;
@@ -30,6 +32,7 @@ public class GenerateBlocks : MonoBehaviour {
             Instantiate(fallBlock, new Vector2(-x, y), Quaternion.identity);
             numOfBlocks++;
             timer = 0;
+            score.text = "Score: " + numOfBlocks.ToString();
         }
 	}
 }

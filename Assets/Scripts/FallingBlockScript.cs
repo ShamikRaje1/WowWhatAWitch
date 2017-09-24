@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FallingBlockScript : MonoBehaviour {
     public string side;
@@ -22,6 +23,7 @@ public class FallingBlockScript : MonoBehaviour {
         if (other.transform.CompareTag("Death"))
         {
             Destroy(gameObject);
+            SceneManager.LoadSceneAsync("GameOver", LoadSceneMode.Single);
         }
         else if (other.transform.CompareTag("Stick"))
         {
