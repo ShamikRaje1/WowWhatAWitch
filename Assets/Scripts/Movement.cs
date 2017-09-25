@@ -19,6 +19,7 @@ public class Movement : MonoBehaviour {
     private float xVelSign = 1;
     private int bulletNum = 0;
     private float doublePrevTimer = 0;
+    float shooting;
 
     void Start()
     {
@@ -28,7 +29,9 @@ public class Movement : MonoBehaviour {
     }
     public void ShootWeb()
     {
-        GameObject bullet = Instantiate(projectile, new Vector2(gameObject.transform.position.x + xVelSign*0.65f, gameObject.transform.position.y), Quaternion.identity);
+
+        shooting = 1;
+        GameObject bullet = Instantiate(projectile, new Vector2(gameObject.transform.position.x + xVelSign*0.7f, gameObject.transform.position.y - 0.2f), Quaternion.identity);
         bullet.GetComponent<Rigidbody2D>().velocity = new Vector2(xVelSign*shotVelocity, 0.0f);
     }
     void FixedUpdate()
@@ -69,11 +72,14 @@ public class Movement : MonoBehaviour {
             GetComponent<Rigidbody2D>().gravityScale = 3;
         }
         // shoots web ball
-        if (Input.GetKeyDown(KeyCode.Z) && doublePrevTimer > 0.15)
+        if (Input.GetKeyDown(KeyCode.Z) && doublePrevTimer > 0.15  && GetComponent<Rigidbody2D>().gravityScale > 2)
         {
    //         Debug.Log("SHOOTING!");
             ShootWeb();
             doublePrevTimer = 0;
+        } else
+        {
+            shooting -= 0.05f;
         }
         //Setting player velocity to velocity
         //GetComponent<Rigidbody2D>().AddForce(velocity);
@@ -93,6 +99,7 @@ public class Movement : MonoBehaviour {
         //Lets the animator know if the player is moving
         GetComponent<Animator>().SetFloat("Speed", Mathf.Abs(velocity.x));
         GetComponent<Animator>().SetFloat("Flutter", GetComponent<Rigidbody2D>().gravityScale);
+        GetComponent<Animator>().SetFloat("Shooting", shooting);
 
     }
 }
