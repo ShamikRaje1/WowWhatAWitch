@@ -17,6 +17,10 @@ public class SwitchToGame : MonoBehaviour {
     {
         SceneManager.LoadSceneAsync("GameOver", LoadSceneMode.Single);
     }
+    public void SwitchToDesktop()
+    {
+        Application.Quit();
+    }
     // Update is called once per frame
     void Update () {
 		
